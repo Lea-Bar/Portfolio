@@ -1,3 +1,5 @@
 {
-    "navbar.home" : "Accueil"
+    "navbar.home" : "Accueil",
+    "presentation.title" : "Qui suis-je ?",
+    "presentation" : "Bonjour, moi c’est Léa BAR. Je suis actuellement en BUT Informatique à l’Université de Lille et je travaille bénévolement en parallèle comme développeuse Java Junior chez Ekalia, une association qui organise des événements sur le jeu-vidéo Minecraft. J’aime aussi coder en TypeScript/Node.js que ce soit sur mes projets personnels ou pour des collaborateurs comme Nicolas Hanot (Nicolas_note)."
 }

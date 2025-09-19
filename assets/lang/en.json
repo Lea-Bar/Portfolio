@@ -1,3 +1,5 @@
 {
-    "navbar.home" : "Home"
+    "navbar.home" : "Home",
+    "presentation.title" : "Who am I ?",
+    "presentation" : "Hello, my name is Léa BAR. I’m currently studying Computer Science at the University of Lille, and at the same time I volunteer as a Junior Java Developer at Ekalia, an association that organizes events around the game Minecraft. I also enjoy coding in TypeScript/Node.js, either on personal projects or while collaborating with people like Nicolas Hanot (Nicolas_note)."
 }
