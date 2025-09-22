@@ -63,7 +63,7 @@ div.presentation {
 }
 
 div.presentation img {
-    width: 30%;
+    width: 25%;
     height: auto;
     margin-right: 50px;
 }
@@ -82,5 +82,5 @@ div.presentation div.paragraphe p {
     color: white;
     font-family: "Roboto", non-serif;
     font-size: 18px;
-    max-width: 100vh;
+    max-width: 85vh;
 }
