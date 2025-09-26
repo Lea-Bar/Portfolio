@@ -2,8 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color: #1a2027;
     margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Background */
+
+div.background {
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    z-index: 0;
 }
 
 /* NAVIGATION */
@@ -60,27 +70,38 @@ div.presentation {
     margin-right: 30px;
     margin-top: 30px;
     justify-content: center;
+    position: fixed;
+    z-index: 1;
 }
 
 div.presentation img {
     width: 25%;
     height: auto;
     margin-right: 50px;
+    -webkit-box-shadow: -5px 6px 12px 3px rgba(0,0,0,0.50); 
+    box-shadow: -5px 6px 12px 3px rgba(0,0,0,0.50);
+    -moz-transform: skew(2deg, 3deg);
+    -webkit-transform: skew(2deg, 3deg);
+    -o-transform: skew(2deg, 3deg);
+    -ms-transform: skew(2deg, 3deg);
+    transform: skew(2deg, 3deg);
 }
 
 div.presentation div.paragraphe {
     align-items: start;
     flex-direction: column;
+    text-shadow: 2px 3px 6px rgba(0,0,0,0.6);
 }
 
 div.presentation div.paragraphe h2 {
     font-family: "Montserrat", non-serif;
     color: white;
+    font-size: 25px;
 }
 
 div.presentation div.paragraphe p {
     color: white;
     font-family: "Roboto", non-serif;
-    font-size: 18px;
+    font-size: 20px;
     max-width: 85vh;
 }
