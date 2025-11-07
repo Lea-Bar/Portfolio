@@ -1,0 +1,29 @@
+:root {
+  --color-sky-top: #05060d;
+  --color-sky-mid-dark: #081022;
+  --color-sky-mid: #0a1428;
+  --color-sky-bottom: #0d1b33;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    var(--color-sky-top) 0%,
+    var(--color-sky-mid-dark) 40%,
+    var(--color-sky-mid) 70%,
+    var(--color-sky-bottom) 100%
+  );
+}
+
+canvas#backgroundCanvas {
+  position: fixed;
+  inset: 0;
+  display: block;
+  z-index: 0;
+}
