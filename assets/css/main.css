@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --color-sky-top: #05060d;
   --color-sky-mid-dark: #081022;
@@ -31,4 +33,49 @@ canvas#background {
 .content {
   position: relative;
   z-index: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.navbar a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+    transform: scale(1.05);
+}
+
+.navbar a:hover::after {
+    width: 100%;
 }
