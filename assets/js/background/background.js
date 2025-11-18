@@ -31,7 +31,7 @@ class StarField {
         this.canvas.width = width;
         this.canvas.height = height;
 
-        const starCount = Math.floor(width * height / 8000);
+        const starCount = Math.floor(width * height / 800);
 
         if (starCount !== this.stars.length) {
             this.createStars(starCount, width, height);
