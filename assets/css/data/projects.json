@@ -1,0 +1,29 @@
+{
+    "projects": [
+        {
+            "title" : "Across Ages Lost",
+            "description" : "Across Ages Lost est la 4ème édition de l'évènement Across Ages, organisée par Ekalia sur Minecraft, le 29 novembre 2025. Pendant 2 jours, les joueurs plongent dans une expérience unique inspirée de la série Lost et des jeux The Forest et Sons of The Forest. Plus d'informations seront disponibles après le 29 novembre.",
+            "link" : "https://ekalia.fr/event/acrossageslost/info",
+            "image" : "assets/images/projects/acrossageslost.png",
+            "workDone" : "Plus d'informations seront disponibles après le 29 novembre.",
+            "technologies" : ["Java", "Gradle", "API Spigot", "Reactor Core"]
+        },
+        {
+            "title" : "SimpleGraph",
+            "description" : "SimpleGraph est un logiciel open-source que j'ai développé avec ElectronJS pour créer facilement des graphes 2D.",
+            "link" : "https://github.com/Lea-Bar/SimpleGraph",
+            "image" : "assets/images/projects/simplegraph.png",
+            "workDone" : "J'ai fais l'intégralité de l'application.",
+            "technologies" : ["ElectronJS", "JavaScript", "HTML", "CSS"]
+        },
+        {
+            "title" : "Quasi Casi-Quiz",
+            "description" : "Quasi Casi-Quiz est l'adaptation de l'émission Twitch \"Casi-Quiz\", animée par Nicolas Hanot, le plus grand champion historique de Question pour un Champion, en un jeu vidéo jouable directement sur navigateur.",
+            "link" : "",
+            "image" : "assets/images/projects/quasicasiquiz.png",
+            "workDone" : "J'ai développé Quasi Casi-Quiz de A à Z avec le framework NextJS. J'ai créé des outils en Python pour faciliter l'importation de questions depuis Google Sheets et utilisé Rust pour concevoir le websocket gérant le multijoueur. J'ai également collaboré avec Nicolas Hanot pour brainstormer l'idée et définir la direction artistique du jeu.",
+            "technologies" : ["NextJS", "TypeScript", "Python", "Rust", "SQL", "MySQL"]
+        }
+
+    ]
+}
