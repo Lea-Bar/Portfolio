@@ -1,0 +1,230 @@
+.header {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(5, 5, 10, 0.6);
+    margin: 0;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+    padding: 0 50px 100px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/** CARDS **/
+
+.projectCard {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    will-change: transform;
+}
+
+.projectCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cardTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+.cardDate {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #aaaaaa;
+    margin-bottom: 15px;
+}
+
+.cardDescription {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #dddddd;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    overflow-wrap: break-word;
+}
+
+.technologiesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.technologyTag {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.seeMoreButton {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.seeMoreButton:hover {
+    background-color: white;
+    color: #05060d;
+    transform: translateY(-2px);
+}
+
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(5, 5, 10, 0.8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+.projectContent {
+    background-color: #0d1b33;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.closeButton {
+    color: #aaaaaa;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.closeButton:hover {
+    color: white;
+}
+
+.projectTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+    margin-top: 0;
+}
+
+.projectDate {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.projectImage {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.projectDescription,
+.projectBody h3,
+.projectBody p {
+    font-family: 'Montserrat', sans-serif;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.projectBody h3 {
+    color: white;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.projectLink {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: white;
+    color: #05060d;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.projectLink:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 760px) {
+    .projects {
+        grid-template-columns: 1fr;
+        padding: 0 20px 50px 20px;
+    }
+
+    .projectContent {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+}

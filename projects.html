@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Léa BAR - Projets</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/projects/projects.css'>
+    <script type="module" src='./assets/js/main.js'></script>
+    <script type="module" src='./assets/js/projects/projects.js'></script>
+</head>
+<body>
+    <canvas id="background"></canvas>
+    <navbar class="navbar">
+        <a href="./index.html">Accueil</a>
+        <a href="#">Projets</a>
+        <a href="./about.html">À propos de moi</a>
+        <a href="./contact.html">Contact</a>
+    </navbar>
+    <div class="content">
+        <div class="header">
+            <h1 class="title">Mes Projets</h1>
+        </div>
+        <div id="projects" class="projects"></div>
+    </div>
+
+    <div id="projectModal" class="modal">
+        <div class="projectContent">
+            <span id="closeModal" class="closeButton">&times;</span>
+            <div class="projectBody">
+                <h2 id="projectTitle" class="projectTitle"></h2>
+                <p id="projectDate" class="projectDate"></p>
+                <img id="projectImage" class="projectImage" src="" alt="" style="display: none;">
+                <div id="projectTechnologies" class="technologiesContainer"></div>
+                <p id="projectDescription" class="projectDescription"></p>
+                <div id="projectWorkSection" style="display: none;">
+                    <h3>Travail réalisé</h3>
+                    <p id="projectWorkDone"></p>
+                </div>
+                <a id="projectLink" href="" target="_blank" class="projectLink" style="display: none;">Voir le projet</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

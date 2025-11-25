@@ -1,66 +1,72 @@
 {
     "projects": [
         {
-            "title" : "Across Ages Lost",
-            "description" : "Across Ages Lost est la 4ème édition de l'évènement Across Ages, organisée par Ekalia sur Minecraft, le 29 novembre 2025. Pendant 2 jours, les joueurs plongent dans une expérience unique inspirée de la série Lost et des jeux The Forest et Sons of The Forest. Plus d'informations seront disponibles après le 29 novembre.",
-            "link" : "https://ekalia.fr/event/acrossageslost/info",
-            "image" : "assets/images/projects/acrossageslost.png",
-            "workDone" : "Plus d'informations seront disponibles après le 29 novembre.",
-            "technologies" : ["Java", "Gradle", "API Spigot", "Reactor Core"],
-            "date" : "29-11-2025"
+            "title": "Across Ages Lost",
+            "description": "Across Ages Lost est la 4ème édition de l'évènement Across Ages, organisée par Ekalia sur Minecraft, le 29 novembre 2025. Pendant 2 jours, les joueurs plongent dans une expérience unique inspirée de la série Lost et des jeux The Forest et Sons of The Forest. Plus d'informations seront disponibles après le 29 novembre.",
+            "link": "https://ekalia.fr/event/acrossageslost/info",
+            "image": "assets/images/projects/acrossageslost.png",
+            "workDone": "Plus d'informations seront disponibles après le 29 novembre.",
+            "technologies": ["Java", "Gradle", "API Spigot", "Reactor Core"],
+            "date": "29-11-2025"
         },
         {
-            "title" : "SimpleGraph",
-            "description" : "SimpleGraph est un logiciel open-source que j'ai développé avec ElectronJS pour créer facilement des graphes 2D.",
-            "link" : "https://github.com/Lea-Bar/SimpleGraph",
-            "image" : "assets/images/projects/simplegraph.png",
-            "technologies" : ["ElectronJS", "JavaScript", "HTML", "CSS"],
-            "date" : "18-03-2025"
+            "title": "Quasi Casi-Quiz",
+            "description": "Quasi Casi-Quiz est l'adaptation de l'émission Twitch \"Casi-Quiz\", animée par Nicolas Hanot, le plus grand champion historique de Question pour un Champion, en un jeu vidéo jouable directement sur navigateur.",
+            "image": "assets/images/projects/quasicasiquiz.png",
+            "workDone": "J'ai développé Quasi Casi-Quiz de A à Z avec le framework NextJS. J'ai créé des outils en Python pour faciliter l'importation de questions depuis Google Sheets et utilisé Rust pour concevoir le websocket gérant le multijoueur. J'ai également collaboré avec Nicolas Hanot pour brainstormer l'idée et définir la direction artistique du jeu.",
+            "technologies": ["NextJS", "TypeScript", "Python", "Rust", "SQL", "MySQL"]
         },
         {
-            "title" : "Quasi Casi-Quiz",
-            "description" : "Quasi Casi-Quiz est l'adaptation de l'émission Twitch \"Casi-Quiz\", animée par Nicolas Hanot, le plus grand champion historique de Question pour un Champion, en un jeu vidéo jouable directement sur navigateur.",
-            "image" : "assets/images/projects/quasicasiquiz.png",
-            "workDone" : "J'ai développé Quasi Casi-Quiz de A à Z avec le framework NextJS. J'ai créé des outils en Python pour faciliter l'importation de questions depuis Google Sheets et utilisé Rust pour concevoir le websocket gérant le multijoueur. J'ai également collaboré avec Nicolas Hanot pour brainstormer l'idée et définir la direction artistique du jeu.",
-            "technologies" : ["NextJS", "TypeScript", "Python", "Rust", "SQL", "MySQL"]
+            "title": "ElyonSpigot",
+            "description": "ElyonSpigot est une version modifiée et privée de Purpur. J'y ai apporté des optimisations spécifiques liées à la gestion des entités et des chunks. J'ai notamment implémenté le format \"Slime\" (créé par Hypixel en 2019). Cette technologie permet de compresser les mondes Minecraft via l'algorithme ZSTD facilitant ainsi leur stockage et leur gestion directement dans une base de données.",
+            "technologies": ["Java", "Netty", "ZSTD"],
+            "date": "18-05-2025"
         },
         {
-            "title" : "IUTBot",
-            "description" : "IUTBot est un bot Discord développé en Java à destination des étudiants de l'IUT de Lille Villeneuve-d'Ascq. Son objectif est de récupérer les emplois du temps et de les afficher via une commande permettant ainsi à chaque étudiant de consulter facilement le planning spécifique de sa classe.",
-            "link" : "https://github.com/Lea-Bar/IUTBot",
-            "technologies" : ["Java", "JDA"],
-            "date" : "05-02-2025"
+            "title": "SimpleGraph",
+            "description": "SimpleGraph est un logiciel open-source que j'ai développé avec ElectronJS pour créer facilement des graphes 2D.",
+            "link": "https://github.com/Lea-Bar/SimpleGraph",
+            "image": "assets/images/projects/simplegraph.png",
+            "technologies": ["ElectronJS", "JavaScript", "HTML", "CSS"],
+            "date": "18-03-2025"
         },
         {
-            "title" : "FRP",
-            "description" : "FRP est un mod pour le jeu Minecraft que j'ai créé en tant que prestation pour le serveur FermentéSMP. Le but de ce mod est d'aider les joueurs à indiquer clairement leur statut : s'ils sont en train de jouer leur rôle, s'ils le jouent partiellement ou s'ils ne le jouent pas du tout. J'ai aussi ajouté un chat de proximité à l'écrit. Cela permet de communiquer et de décrire des actions uniquement aux personnes alentour ce qui est idéal pour ceux qui n'ont pas de microphone.",
-            "image" : "assets/images/projects/frp.png",
-            "workDone" : "J'ai mis à profit mes compétences en 3D (via la technologie OpenGL) et utilisé l'API Forge pour modifier le code du jeu. Cela m'a permis d'implémenter des changements visuels et d'ajouter des commandes spécifiques, tout en optimisant mes modifications pour en garantir la stabilité.",
-            "technologies" : ["Java", "API Forge", "Mixins", "OpenGL"],
-            "date" : "04-11-2024"
+            "title": "IUTBot",
+            "description": "IUTBot est un bot Discord développé en Java à destination des étudiants de l'IUT de Lille Villeneuve-d'Ascq. Son objectif est de récupérer les emplois du temps et de les afficher via une commande permettant ainsi à chaque étudiant de consulter facilement le planning spécifique de sa classe.",
+            "link": "https://github.com/Lea-Bar/IUTBot",
+            "technologies": ["Java", "JDA"],
+            "date": "05-02-2025"
         },
         {
-            "title" : "ElyonSpigot",
-            "description" : "ElyonSpigot est une version modifiée et privée de Purpur. J'y ai apporté des optimisations spécifiques liées à la gestion des entités et des chunks. J'ai notamment implémenté le format \"Slime\" (créé par Hypixel en 2019). Cette technologie permet de compresser les mondes Minecraft via l'algorithme ZSTD facilitant ainsi leur stockage et leur gestion directement dans une base de données.",
-            "technologies" : ["Java", "Netty", "ZSTD"],
-            "date" : "18-05-2025"
+            "title": "FRP",
+            "description": "FRP est un mod pour le jeu Minecraft que j'ai créé en tant que prestation pour le serveur FermentéSMP. Le but de ce mod est d'aider les joueurs à indiquer clairement leur statut : s'ils sont en train de jouer leur rôle, s'ils le jouent partiellement ou s'ils ne le jouent pas du tout. J'ai aussi ajouté un chat de proximité à l'écrit. Cela permet de communiquer et de décrire des actions uniquement aux personnes alentour ce qui est idéal pour ceux qui n'ont pas de microphone.",
+            "image": "assets/images/projects/frp.png",
+            "workDone": "J'ai mis à profit mes compétences en 3D (via la technologie OpenGL) et utilisé l'API Forge pour modifier le code du jeu. Cela m'a permis d'implémenter des changements visuels et d'ajouter des commandes spécifiques, tout en optimisant mes modifications pour en garantir la stabilité.",
+            "technologies": ["Java", "API Forge", "Mixins", "OpenGL"],
+            "date": "04-11-2024"
         },
         {
-            "title" : "PepperoniSMP",
-            "image" : "assets/images/projects/psmp.png",
-            "link" : "https://x.com/PepperoniSMP",
-            "description" : "PepperoniSMP est un projet de serveur Minecraft de jeu de rôle international que j'ai co-fondé. L'objectif était de réunir une communauté internationale pour favoriser l'apprentissage des langues et la découverte culturelle des différents pays.",
-            "workDone" : "J'ai participé à la communication et j'étais responsable du développement et de l'administration système. J'ai réalisé plusieurs mods pour implémenter des éléments personnalisés demandés par les joueurs, optimiser le serveur et ajouter des outils d'administration et de construction.",
-            "technologies" : ["Java", "PHP", "Debian", "Bash", "Docker", "API Forge", "API Spigot"],
-            "date" : "11-04-2024"
+            "title": "PepperoniSMP",
+            "image": "assets/images/projects/psmp.png",
+            "link": "https://x.com/PepperoniSMP",
+            "description": "PepperoniSMP est un projet de serveur Minecraft de jeu de rôle international que j'ai co-fondé. L'objectif était de réunir une communauté internationale pour favoriser l'apprentissage des langues et la découverte culturelle des différents pays.",
+            "workDone": "J'ai participé à la communication et j'étais responsable du développement et de l'administration système. J'ai réalisé plusieurs mods pour implémenter des éléments personnalisés demandés par les joueurs, optimiser le serveur et ajouter des outils d'administration et de construction.",
+            "technologies": ["Java", "PHP", "Debian", "Bash", "Docker", "API Forge", "API Spigot"],
+            "date": "11-04-2024"
         },
         {
-            "title" : "VSSMPTranslator",
-            "image" : "assets/images/projects/vssmp.png",
-            "description" : "VSSMPTranslator est un mod développé pour le serveur international VSSMP. Il permettait la traduction automatique des panneaux et des livres via Google Traduction, ainsi que leur lecture audio grâce à l'intégration de l'API de synthèse vocale (TTS) native de Microsoft Windows.",
-            "technologies" : ["Java", "API Forge"],
-            "date" : "20-03-2024"
+            "title": "VSSMPTranslator",
+            "image": "assets/images/projects/vssmp.png",
+            "description": "VSSMPTranslator est un mod développé pour le serveur international VSSMP. Il permettait la traduction automatique des panneaux et des livres via Google Traduction, ainsi que leur lecture audio grâce à l'intégration de l'API de synthèse vocale (TTS) native de Microsoft Windows.",
+            "technologies": ["Java", "API Forge"],
+            "date": "20-03-2024"
+        },
+        {
+            "title" : "GameAPI",
+            "description" : "GameAPI est une API Spigot conçue pour faciliter le développement de mini-jeux sur Minecraft.",
+            "technologies" : ["Java", "API Spigot"],
+            "link" : "https://github.com/saiyuudev/GameAPI",
+            "date" : "17-05-2022"
         }
-
     ]
 }
