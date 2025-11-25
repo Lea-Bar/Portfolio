@@ -25,6 +25,13 @@
             "technologies" : ["NextJS", "TypeScript", "Python", "Rust", "SQL", "MySQL"]
         },
         {
+            "title" : "IUTBot",
+            "description" : "IUTBot est un bot Discord développé en Java à destination des étudiants de l'IUT de Lille Villeneuve-d'Ascq. Son objectif est de récupérer les emplois du temps et de les afficher via une commande permettant ainsi à chaque étudiant de consulter facilement le planning spécifique de sa classe.",
+            "link" : "https://github.com/Lea-Bar/IUTBot",
+            "technologies" : ["Java", "JDA"],
+            "date" : "05-02-2025"
+        },
+        {
             "title" : "FRP",
             "description" : "FRP est un mod pour le jeu Minecraft que j'ai créé en tant que prestation pour le serveur FermentéSMP. Le but de ce mod est d'aider les joueurs à indiquer clairement leur statut : s'ils sont en train de jouer leur rôle, s'ils le jouent partiellement ou s'ils ne le jouent pas du tout. J'ai aussi ajouté un chat de proximité à l'écrit. Cela permet de communiquer et de décrire des actions uniquement aux personnes alentour ce qui est idéal pour ceux qui n'ont pas de microphone.",
             "image" : "assets/images/projects/frp.png",
@@ -42,7 +49,8 @@
             "title" : "PepperoniSMP",
             "image" : "assets/images/projects/psmp.png",
             "link" : "https://x.com/PepperoniSMP",
-            "description" : "PepperoniSMP est un projet de serveur Minecraft de jeu de rôle international que j'ai co-fondé. L'objectif était de réunir une communauté internationale pour favoriser l'apprentissage des langues. J'ai participé à la communication et j'étais responsable du développement et de l'administration système. J'ai réalisé plusieurs mods pour implémenter des éléments personnalisés demandés par les joueurs, optimiser le serveur et ajouter des outils d'administration et de construction.",
+            "description" : "PepperoniSMP est un projet de serveur Minecraft de jeu de rôle international que j'ai co-fondé. L'objectif était de réunir une communauté internationale pour favoriser l'apprentissage des langues et la découverte culturelle des différents pays.",
+            "workDone" : "J'ai participé à la communication et j'étais responsable du développement et de l'administration système. J'ai réalisé plusieurs mods pour implémenter des éléments personnalisés demandés par les joueurs, optimiser le serveur et ajouter des outils d'administration et de construction.",
             "technologies" : ["Java", "PHP", "Debian", "Bash", "Docker", "API Forge", "API Spigot"],
             "date" : "11-04-2024"
         },
