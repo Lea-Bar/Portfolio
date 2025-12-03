@@ -2,12 +2,12 @@
     "projects": [
         {
             "title": "Across Ages Lost",
-            "description": "Across Ages Lost est la 4ème édition de l'évènement Across Ages, organisée par Ekalia sur Minecraft, le 29 novembre 2025. Pendant 2 jours, les joueurs plongent dans une expérience unique inspirée de la série Lost et des jeux The Forest et Sons of The Forest. Plus d'informations seront disponibles après le 29 novembre.",
+            "description": "Across Ages Lost est la 4ème édition de l'évènement Across Ages organisée par Ekalia sur Minecraft, le 29 novembre 2025. Pendant 2 jours, les joueurs plongent dans une expérience unique inspirée de la série Lost et des jeux The Forest. Après un crash d'avion, ils se retrouvent exilés sur une île mystérieuse où ils doivent collecter des ressources et construire différents bâtiments pour survivre et s'échapper, tout en prenant garde aux monstres qui rôdent.",
             "link": "https://ekalia.fr/event/acrossageslost/info",
             "image": "assets/images/projects/acrossageslost.png",
-            "workDone": "Plus d'informations seront disponibles après le 29 novembre.",
+            "workDone": "Plus d'informations seront bientôt disponibles.",
             "technologies": ["Java", "Gradle", "API Spigot", "Reactor Core"],
-            "date": "29-11-2025"
+            "date": "Bientôt"
         },
         {
             "title": "Quasi Casi-Quiz",
