@@ -7,7 +7,7 @@
             "workDone": "J'ai développé Quasi Casi-Quiz de A à Z avec le framework Svelte. J'ai créé des outils en Python pour faciliter l'importation de questions depuis Google Sheets et utilisé Socket.IO pour concevoir le websocket gérant le multijoueur. J'ai également collaboré avec Nicolas Hanot pour brainstormer l'idée et définir la direction artistique du jeu.",
             "technologies": ["Svelte", "TypeScript", "Python", "Socket.IO", "SQL", "PostgreSQL"]
         },
-                {
+        {
             "title": "Across Ages Lost",
             "description": "Across Ages Lost est la 4ème édition de l'évènement Across Ages organisée par Ekalia sur Minecraft, le 29 novembre 2025. Pendant 2 jours, les joueurs plongent dans une expérience unique inspirée de la série Lost et des jeux The Forest. Après un crash d'avion, ils se retrouvent exilés sur une île mystérieuse où ils doivent collecter des ressources et construire différents bâtiments pour survivre et s'échapper, tout en prenant garde aux monstres qui rôdent.",
             "link": "https://ekalia.fr/event/acrossageslost/info",
@@ -15,6 +15,13 @@
             "workDone": "Plus d'informations seront bientôt disponibles.",
             "technologies": ["Java", "Gradle", "API Spigot", "Reactor Core"],
             "date": "05-07-2026"
+        },
+                {
+            "title": "SAE 4.01 & 4.02",
+            "description": "Dans le cadre d'une SAE axée sur la gestion de projet et le développement, nous avons conçu en équipe de 3 étudiant.e.s un jeu vidéo de type Shoot Them Up entièrement en TypeScript en utilisant ViteJS pour la partie cliente et Socket.io pour le serveur.",
+            "workDone": "Ce projet m'a permis de développer mes compétences en gestion de projet en utilisant les Milestones GitLab pour répartir les tâches par sprint, tout en concevant un moteur de jeu 2D en TypeScript, en implémentant le système de paquets côté serveur et en effectuant un travail d'optimisation des performances.",
+            "technologies": ["TypeScript", "ViteJS", "Socket.IO", "Gestion de projet"],
+            "date": "30-03-2026"
         },
         {
             "title": "ElyonSpigot",
