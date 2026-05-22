@@ -1,20 +1,20 @@
 {
     "projects": [
         {
+            "title": "Quasi Casi-Quiz",
+            "description": "Quasi Casi-Quiz est l'adaptation de l'émission Twitch \"Casi-Quiz\", animée par Nicolas Hanot, le plus grand champion historique de Question pour un Champion, en un jeu vidéo jouable directement sur navigateur.",
+            "image": "assets/images/projects/quasicasiquiz.png",
+            "workDone": "J'ai développé Quasi Casi-Quiz de A à Z avec le framework Svelte. J'ai créé des outils en Python pour faciliter l'importation de questions depuis Google Sheets et utilisé Socket.IO pour concevoir le websocket gérant le multijoueur. J'ai également collaboré avec Nicolas Hanot pour brainstormer l'idée et définir la direction artistique du jeu.",
+            "technologies": ["Svelte", "TypeScript", "Python", "Socket.IO", "SQL", "PostgreSQL"]
+        },
+                {
             "title": "Across Ages Lost",
             "description": "Across Ages Lost est la 4ème édition de l'évènement Across Ages organisée par Ekalia sur Minecraft, le 29 novembre 2025. Pendant 2 jours, les joueurs plongent dans une expérience unique inspirée de la série Lost et des jeux The Forest. Après un crash d'avion, ils se retrouvent exilés sur une île mystérieuse où ils doivent collecter des ressources et construire différents bâtiments pour survivre et s'échapper, tout en prenant garde aux monstres qui rôdent.",
             "link": "https://ekalia.fr/event/acrossageslost/info",
             "image": "assets/images/projects/acrossageslost.png",
             "workDone": "Plus d'informations seront bientôt disponibles.",
             "technologies": ["Java", "Gradle", "API Spigot", "Reactor Core"],
-            "date": "Bientôt"
-        },
-        {
-            "title": "Quasi Casi-Quiz",
-            "description": "Quasi Casi-Quiz est l'adaptation de l'émission Twitch \"Casi-Quiz\", animée par Nicolas Hanot, le plus grand champion historique de Question pour un Champion, en un jeu vidéo jouable directement sur navigateur.",
-            "image": "assets/images/projects/quasicasiquiz.png",
-            "workDone": "J'ai développé Quasi Casi-Quiz de A à Z avec le framework Svelte. J'ai créé des outils en Python pour faciliter l'importation de questions depuis Google Sheets et utilisé Socket.IO pour concevoir le websocket gérant le multijoueur. J'ai également collaboré avec Nicolas Hanot pour brainstormer l'idée et définir la direction artistique du jeu.",
-            "technologies": ["Svelte", "TypeScript", "Python", "Socket.IO", "SQL", "PostgreSQL"]
+            "date": "05-07-2026"
         },
         {
             "title": "ElyonSpigot",
