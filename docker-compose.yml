@@ -1,0 +1,12 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PORT: ${PORT:-80}
+    restart: unless-stopped
+    environment:
+      PORT: ${PORT:-80}
+    expose:
+      - "${PORT:-80}"
