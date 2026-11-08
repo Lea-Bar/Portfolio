@@ -3,6 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      pull: true
+      no_cache: true
       args:
         PORT: ${PORT:-8080}
     restart: unless-stopped

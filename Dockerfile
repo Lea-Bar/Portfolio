@@ -1,12 +1,17 @@
-FROM node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8 AS build
+FROM node:alpine AS build
 
 WORKDIR /app
+RUN npm install --global --no-fund --no-audit esbuild@latest
 COPY projects.html ./
 COPY data ./data
 COPY scripts ./scripts
 RUN node scripts/build-projects.mjs dist/projects.html
+COPY assets ./assets
 
-FROM nginxinc/nginx-unprivileged:1.31.1-alpine@sha256:cc300bd2e8776708a8c2c8686a74f06eadf221c5ce01e85d0e821955d7a730ab
+RUN find assets -type f \( -name '*.js' -o -name '*.css' \) -print0 \
+    | xargs -0 esbuild --minify --outbase=assets --outdir=dist/assets --log-level=warning
+
+FROM nginxinc/nginx-unprivileged:alpine
 
 ARG PORT=8080
 ENV PORT=${PORT}
@@ -24,6 +29,7 @@ USER 101
 COPY --chown=root:root --chmod=444 index.html about.html contact.html /usr/share/nginx/html/
 COPY --from=build --chown=root:root --chmod=444 /app/dist/projects.html /usr/share/nginx/html/
 COPY --chown=root:root --chmod=a=rX assets /usr/share/nginx/html/assets
+COPY --from=build --chown=root:root --chmod=a=rX /app/dist/assets /usr/share/nginx/html/assets
 
 EXPOSE ${PORT}
 
