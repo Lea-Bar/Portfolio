@@ -4,9 +4,23 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        PORT: ${PORT:-80}
+        PORT: ${PORT:-8080}
     restart: unless-stopped
-    environment:
-      PORT: ${PORT:-80}
     expose:
-      - "${PORT:-80}"
+      - "${PORT:-8080}"
+    user: "101:101"
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777,noexec,nosuid,nodev
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 64
+    mem_limit: 128m
+    cpus: 0.5
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

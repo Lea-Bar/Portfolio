@@ -1,5 +1,9 @@
 .git
 .gitignore
+.dockerignore
+.env*
 Dockerfile
 docker-compose.yml
-.dockerignore
+dist
+node_modules
+*.md
