@@ -15,7 +15,7 @@
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
     gap: 40px;
     padding: 0 50px 100px 50px;
     max-width: 1400px;
@@ -34,13 +34,28 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    will-change: transform;
 }
 
-.projectCard:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    background-color: rgba(255, 255, 255, 0.1);
+@media (hover: hover) and (pointer: fine) {
+    .projectCard:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .seeMoreButton:hover {
+        background-color: white;
+        color: #05060d;
+        transform: translateY(-2px);
+    }
+
+    .closeButton:hover {
+        color: white;
+    }
+
+    .projectLink:hover {
+        transform: scale(1.05);
+    }
 }
 
 .cardImage {
@@ -107,10 +122,9 @@
     align-self: flex-start;
 }
 
-.seeMoreButton:hover {
+.seeMoreButton:active {
     background-color: white;
     color: #05060d;
-    transform: translateY(-2px);
 }
 
 /* MODAL */
@@ -119,11 +133,9 @@
     display: none;
     position: fixed;
     z-index: 10;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+    inset: 0;
+    overflow: hidden;
+    overscroll-behavior: contain;
     background-color: rgba(5, 5, 10, 0.8);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -142,19 +154,35 @@
     position: relative;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
     max-height: 90vh;
+    max-height: 90dvh;
     overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
 }
 
 .closeButton {
-    color: #aaaaaa;
+    position: sticky;
+    top: 0;
     float: right;
-    font-size: 25px;
+    width: 44px;
+    height: 44px;
+    margin: -10px -10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 27, 51, 0.85);
+    border: none;
+    border-radius: 50%;
+    color: #aaaaaa;
+    font-size: 30px;
+    line-height: 1;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.2s;
+    z-index: 1;
 }
 
-.closeButton:hover {
+.closeButton:active {
     color: white;
 }
 
@@ -164,6 +192,7 @@
     font-size: 30px;
     color: white;
     margin-top: 0;
+    overflow-wrap: break-word;
 }
 
 .projectDate {
@@ -209,22 +238,82 @@
     transition: transform 0.2s ease;
 }
 
-.projectLink:hover {
-    transform: scale(1.05);
-}
-
 @media (max-width: 760px) {
-    .projects {
-        grid-template-columns: 1fr;
-        padding: 0 20px 50px 20px;
-    }
-
-    .projectContent {
-        width: 90%;
-        padding: 20px;
+    .header {
+        padding: calc(var(--navbar-height) + 30px) 20px 30px 20px;
     }
 
     .title {
-        font-size: 40px;
+        font-size: clamp(30px, 9vw, 40px);
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 16px 40px 16px;
+    }
+
+    .projectCard {
+        padding: 20px;
+        /* Many blurred cards over the animated canvas make scrolling stutter */
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        background-color: rgba(13, 27, 51, 0.75);
+    }
+
+    .cardImage {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 16px;
+    }
+
+    .cardTitle {
+        font-size: 21px;
+    }
+
+    .technologyTag {
+        font-size: 13px;
+        padding: 4px 12px;
+    }
+
+    .seeMoreButton {
+        align-self: stretch;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    /* Modal becomes a bottom sheet on phones */
+    .modal {
+        align-items: flex-end;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+
+    .projectContent {
+        width: 100%;
+        max-width: none;
+        max-height: 92vh;
+        max-height: 92dvh;
+        margin: 0;
+        padding: 20px 20px calc(24px + env(safe-area-inset-bottom)) 20px;
+        border-radius: 15px 15px 0 0;
+        border-bottom: none;
+    }
+
+    .closeButton {
+        margin: -6px -6px 0 8px;
+    }
+
+    .projectTitle {
+        font-size: 24px;
+    }
+
+    .projectImage {
+        max-height: 240px;
+    }
+
+    .projectLink {
+        display: block;
+        text-align: center;
     }
 }

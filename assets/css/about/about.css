@@ -65,31 +65,49 @@
     transition: transform 0.3s ease;
 }
 
-.chibiImage:hover {
-    transform: scale(1.05) rotate(5deg);
+.chibiImage {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .chibiImage:hover {
+        transform: scale(1.05) rotate(5deg);
+    }
 }
 
 @media (max-width: 760px) {
     .header {
-        padding-top: 50px;
-        padding-bottom: 30px;
+        padding: calc(var(--navbar-height) + 30px) 20px 30px 20px;
     }
 
     .title {
-        font-size: 40px;
+        font-size: clamp(30px, 9vw, 40px);
+        line-height: 1.15;
     }
 
     .about {
-        padding: 0 20px 50px 20px;
+        padding: 0 16px 40px 16px;
     }
 
     .card {
         flex-direction: column;
-        padding: 30px;
-        gap: 20px;
+        padding: 24px 20px;
+        gap: 24px;
+        /* Blurring a large area over the animated canvas is costly on phones */
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        background-color: rgba(13, 27, 51, 0.75);
     }
 
-    .image {
-        flex: 0 0 auto;
+    .text p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+        hyphens: auto;
+    }
+
+    .chibiImage {
+        width: min(200px, 60vw);
     }
 }

@@ -5,6 +5,10 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Léa BAR - Projets</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='theme-color' content='#05060d'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/projects/projects.css'>
     <script type="module" src='./assets/js/main.js' defer></script>
@@ -12,12 +16,12 @@
 </head>
 <body>
     <canvas id="background"></canvas>
-    <navbar class="navbar">
+    <nav class="navbar">
         <a href="./index.html">Accueil</a>
-        <a href="#">Projets</a>
+        <a href="./projects.html" aria-current="page">Projets</a>
         <a href="./about.html">À propos de moi</a>
         <a href="./contact.html">Contact</a>
-    </navbar>
+    </nav>
     <div class="content">
         <div class="header">
             <h1 class="title">Mes Projets</h1>
@@ -25,9 +29,9 @@
         <div id="projects" class="projects"></div>
     </div>
 
-    <div id="projectModal" class="modal">
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="projectTitle">
         <div class="projectContent">
-            <span id="closeModal" class="closeButton">&times;</span>
+            <button type="button" id="closeModal" class="closeButton" aria-label="Fermer">&times;</button>
             <div class="projectBody">
                 <h2 id="projectTitle" class="projectTitle"></h2>
                 <p id="projectDate" class="projectDate"></p>

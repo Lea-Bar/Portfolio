@@ -67,10 +67,25 @@
     border: 1px solid transparent;
 }
 
-.contactLink:hover {
-    transform: translateY(-5px);
+@media (hover: hover) and (pointer: fine) {
+    .contactLink:hover {
+        transform: translateY(-5px);
+        background-color: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .buttonLink:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+}
+
+.contactLink:active {
     background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.buttonLink:active {
+    transform: scale(0.98);
 }
 
 .label {
@@ -87,7 +102,7 @@
     font-size: 16px;
     font-weight: 600;
     color: white;
-    word-break: break-all;
+    overflow-wrap: anywhere;
 }
 
 .buttonLink {
@@ -106,31 +121,37 @@
     grid-column: 1/-1;
 }
 
-.buttonLink:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-}
-
 @media (max-width: 760px) {
     .header {
-        padding-top: 50px;
-        padding-bottom: 30px;
+        padding: calc(var(--navbar-height) + 30px) 20px 30px 20px;
     }
 
     .title {
-        font-size: 40px;
+        font-size: clamp(30px, 9vw, 40px);
     }
 
     .contact {
-        padding: 0 20px 50px 20px;
+        padding: 0 16px 40px 16px;
     }
 
     .card {
-        padding: 25px;
+        padding: 24px 20px;
         gap: 25px;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        background-color: rgba(13, 27, 51, 0.75);
+    }
+
+    .subtitle {
+        font-size: 21px;
     }
 
     .linkContainer {
         grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .label {
+        font-size: 12px;
     }
 }

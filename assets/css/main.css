@@ -1,21 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
   --color-sky-top: #05060d;
   --color-sky-mid-dark: #081022;
   --color-sky-mid: #0a1428;
   --color-sky-bottom: #0d1b33;
+  --navbar-height: 60px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html, body {
   margin: 0;
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
-  min-height: 100%;
   margin: 0;
+  /* Fallback colour; the gradient lives on the fixed canvas so it
+     does not stretch or jank on mobile (background-attachment: fixed
+     is unsupported on iOS and forces repaints on Android). */
+  background-color: var(--color-sky-top);
+  overflow-x: hidden;
+}
 
+body.modalOpen {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+canvas#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100lvh;
+  display: block;
+  z-index: 0;
+  pointer-events: none;
   background: linear-gradient(
     180deg,
     var(--color-sky-top) 0%,
@@ -23,14 +57,6 @@ body {
     var(--color-sky-mid) 70%,
     var(--color-sky-bottom) 100%
   );
-  background-attachment: fixed;
-}
-
-canvas#background {
-  position: fixed;
-  inset: 0;
-  display: block;
-  z-index: 0;
 }
 
 .content {
@@ -44,14 +70,16 @@ canvas#background {
     top: 0;
     left: 0;
     width: 100%;
+    min-height: var(--navbar-height);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     z-index: 3;
+    background-color: rgba(5, 6, 13, 0.35);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 5px 8px;
 }
 
 .navbar a {
@@ -61,6 +89,7 @@ canvas#background {
     padding: 15px 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    white-space: nowrap;
     transition: color 0.3s ease;
 }
 
@@ -75,10 +104,68 @@ canvas#background {
     transition: width 0.3s ease;
 }
 
-.navbar a:hover {
-    transform: scale(1.05);
+.navbar a[aria-current="page"]::after {
+    width: 100%;
 }
 
-.navbar a:hover::after {
-    width: 100%;
+@media (hover: hover) and (pointer: fine) {
+    .navbar a:hover::after {
+        width: 100%;
+    }
+}
+
+.navbar a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: -4px;
+    border-radius: 4px;
+}
+
+@media (max-width: 760px) {
+    :root {
+        --navbar-height: 52px;
+    }
+
+    .navbar a {
+        padding: 14px 10px;
+        font-size: 14px;
+    }
+
+    .navbar a::after {
+        left: 10px;
+        bottom: 8px;
+        height: 2px;
+    }
+
+    .navbar a[aria-current="page"]::after {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .navbar a {
+        padding: 14px 7px;
+        font-size: 13px;
+    }
+
+    .navbar a::after {
+        left: 7px;
+    }
+
+    .navbar a[aria-current="page"]::after {
+        width: calc(100% - 14px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }
