@@ -26,11 +26,8 @@ class StarField {
 
     resize() {
         const width = window.innerWidth;
-        // Size against the largest viewport height so the canvas does not need
-        // to be rebuilt when the mobile address bar shows or hides.
         const height = Math.max(window.innerHeight, document.documentElement.clientHeight, window.screen ? window.screen.height : 0);
 
-        // Ignore height-only changes (mobile toolbar) once the field exists
         if (this.stars.length && width === this.width && height <= this.height) {
             return;
         }
@@ -93,7 +90,6 @@ class StarField {
         this.lastTime = currentTime;
         this.time += deltaTime * 0.0005;
 
-        // ~30fps is plenty for a slow twinkle and halves the work on phones
         if (currentTime - this.lastDraw >= 33) {
             this.lastDraw = currentTime;
             this.draw();

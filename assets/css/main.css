@@ -25,9 +25,6 @@ html, body {
 
 body {
   margin: 0;
-  /* Fallback colour; the gradient lives on the fixed canvas so it
-     does not stretch or jank on mobile (background-attachment: fixed
-     is unsupported on iOS and forces repaints on Android). */
   background-color: var(--color-sky-top);
   overflow-x: hidden;
 }
@@ -64,7 +61,6 @@ canvas#background {
   z-index: 1;
 }
 
-/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;

@@ -4,8 +4,6 @@ div.titleContainer {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    /* Use the small viewport height on mobile so the title stays centred
-       in the visible area and does not jump when the address bar moves. */
     height: 100svh;
     padding: var(--navbar-height) 20px 0 20px;
     text-align: center;

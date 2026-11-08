@@ -8,7 +8,6 @@ function openModal(details) {
     modalContent.scrollTop = 0;
     document.body.classList.add('modalOpen');
 
-    // Let the phone/browser "back" action close the modal instead of leaving the page
     if (!history.state || !history.state.projectModal) {
         history.pushState({ projectModal: true }, '');
     }
@@ -21,7 +20,7 @@ function hideModal() {
 
 function closeModal() {
     if (history.state && history.state.projectModal) {
-        history.back(); // triggers popstate, which hides the modal
+        history.back();
     } else {
         hideModal();
     }
@@ -54,7 +53,6 @@ window.addEventListener('popstate', () => {
     }
 });
 
-// A reload while the modal was open leaves a stale history entry
 if (history.state && history.state.projectModal) {
     history.replaceState(null, '');
 }

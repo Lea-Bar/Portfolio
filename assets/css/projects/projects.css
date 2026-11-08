@@ -22,7 +22,6 @@
     margin: 0 auto;
 }
 
-/** CARDS **/
 
 .projectCard {
     background-color: rgba(255, 255, 255, 0.05);
@@ -127,7 +126,6 @@
     color: #05060d;
 }
 
-/* MODAL */
 
 .modal {
     display: none;
@@ -255,7 +253,6 @@
 
     .projectCard {
         padding: 20px;
-        /* Many blurred cards over the animated canvas make scrolling stutter */
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
         background-color: rgba(13, 27, 51, 0.75);
@@ -282,7 +279,6 @@
         font-size: 15px;
     }
 
-    /* Modal becomes a bottom sheet on phones */
     .modal {
         align-items: flex-end;
         -webkit-backdrop-filter: none;

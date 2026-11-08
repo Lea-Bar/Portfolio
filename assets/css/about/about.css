@@ -94,7 +94,6 @@
         flex-direction: column;
         padding: 24px 20px;
         gap: 24px;
-        /* Blurring a large area over the animated canvas is costly on phones */
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
         background-color: rgba(13, 27, 51, 0.75);
