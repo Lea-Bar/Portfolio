@@ -4,7 +4,7 @@
             "title": "Across Ages Lost",
             "description": "Across Ages Lost est la 4ème édition de l'évènement Across Ages organisée par Ekalia sur Minecraft, le 5 juin 2026. Pendant 3 jours, les joueurs plongent dans une expérience unique inspirée de la série Lost et des jeux The Forest. Après un crash d'avion, ils se retrouvent exilés sur une île mystérieuse où ils doivent collecter des ressources et construire différents bâtiments pour survivre et s'échapper, tout en prenant garde aux monstres qui rôdent.",
             "link": "https://ekalia.fr/event/acrossageslost/info",
-            "image": "assets/images/projects/acrossageslost.png",
+            "image": "assets/images/projects/acrossageslost.webp",
             "workDone": "J'ai développé le système de récupération des valises sur l'île, la partie finale avant la cinématique de fin où les joueurs localisent à l'aide d'un scanner les différentes pièces d'unhélicoptère afin de le réparer dans un bunker. J'ai également corrigé de nombreux bugs remontés durant la phase de bêta-test.",
             "technologies": ["Java", "Gradle", "API Spigot", "Reactor Core"],
             "date": "05-07-2026"
@@ -26,7 +26,7 @@
             "title": "SimpleGraph",
             "description": "SimpleGraph est un logiciel open-source que j'ai développé avec ElectronJS pour créer facilement des graphes 2D.",
             "link": "https://github.com/Lea-Bar/SimpleGraph",
-            "image": "assets/images/projects/simplegraph.png",
+            "image": "assets/images/projects/simplegraph.webp",
             "technologies": ["ElectronJS", "JavaScript", "HTML", "CSS"],
             "date": "18-03-2025"
         },
@@ -40,14 +40,14 @@
         {
             "title": "FRP",
             "description": "FRP est un mod pour le jeu Minecraft que j'ai créé en tant que prestation pour le serveur FermentéSMP. Le but de ce mod est d'aider les joueurs à indiquer clairement leur statut : s'ils sont en train de jouer leur rôle, s'ils le jouent partiellement ou s'ils ne le jouent pas du tout. J'ai aussi ajouté un chat de proximité à l'écrit. Cela permet de communiquer et de décrire des actions uniquement aux personnes alentour ce qui est idéal pour ceux qui n'ont pas de microphone.",
-            "image": "assets/images/projects/frp.png",
+            "image": "assets/images/projects/frp.webp",
             "workDone": "J'ai mis à profit mes compétences en 3D (via la technologie OpenGL) et utilisé l'API Forge pour modifier le code du jeu. Cela m'a permis d'implémenter des changements visuels et d'ajouter des commandes spécifiques, tout en optimisant mes modifications pour en garantir la stabilité.",
             "technologies": ["Java", "API Forge", "Mixins", "OpenGL"],
             "date": "04-11-2024"
         },
         {
             "title": "PepperoniSMP",
-            "image": "assets/images/projects/psmp.png",
+            "image": "assets/images/projects/psmp.webp",
             "link": "https://x.com/PepperoniSMP",
             "description": "PepperoniSMP est un projet de serveur Minecraft de jeu de rôle international que j'ai co-fondé. L'objectif était de réunir une communauté internationale pour favoriser l'apprentissage des langues et la découverte culturelle des différents pays.",
             "workDone": "J'ai participé à la communication et j'étais responsable du développement et de l'administration système. J'ai réalisé plusieurs mods pour implémenter des éléments personnalisés demandés par les joueurs, optimiser le serveur et ajouter des outils d'administration et de construction.",
@@ -56,7 +56,7 @@
         },
         {
             "title": "VSSMPTranslator",
-            "image": "assets/images/projects/vssmp.png",
+            "image": "assets/images/projects/vssmp.webp",
             "description": "VSSMPTranslator est un mod développé pour le serveur international VSSMP. Il permettait la traduction automatique des panneaux et des livres via Google Traduction, ainsi que leur lecture audio grâce à l'intégration de l'API de synthèse vocale (TTS) native de Microsoft Windows.",
             "technologies": ["Java", "API Forge"],
             "date": "20-03-2024"
@@ -71,7 +71,7 @@
         {
             "title": "Quasi Casi-Quiz",
             "description": "Quasi Casi-Quiz est l'adaptation de l'émission Twitch \"Casi-Quiz\", animée par Nicolas Hanot, le plus grand champion historique de Question pour un Champion, en un jeu vidéo jouable directement sur navigateur.",
-            "image": "assets/images/projects/quasicasiquiz.png",
+            "image": "assets/images/projects/quasicasiquiz.webp",
             "workDone": "J'ai développé Quasi Casi-Quiz de A à Z avec le framework Svelte. J'ai créé des outils en Python pour faciliter l'importation de questions depuis Google Sheets et utilisé Socket.IO pour concevoir le websocket gérant le multijoueur. J'ai également collaboré avec Nicolas Hanot pour brainstormer l'idée et définir la direction artistique du jeu.",
             "technologies": ["Svelte", "TypeScript", "Python", "Socket.IO", "SQL", "PostgreSQL"],
             "date": "Annulé"
